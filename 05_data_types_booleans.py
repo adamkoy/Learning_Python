@@ -1,5 +1,5 @@
 # Booleans
-#Boolean is a data type that is either truwe and false
+#Boolean is a data type that is either true and false
 
 #Syntax is capital letter
 var_true = True
