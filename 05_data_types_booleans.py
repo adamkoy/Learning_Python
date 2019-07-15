@@ -19,7 +19,7 @@ print(weather =='Rainy')
 #Logical **AND**  & **OR**
 #Evaluate two sides, and BOTH have to be true for it to return True
 print(True and False)
-print(weather== 'Rainy' and weather == 'Sunny')
+print(weather == 'Rainy' and weather == 'Sunny')
 
 print(weather == 'Rainy' and weather == 'Rainy')
 print(True and True)
