@@ -5,7 +5,9 @@
          #Block of code
            #elif
              # Block of code
-
+              #elif
+             # Block of code
+                #else:
 
 # age = 70
 #
@@ -58,11 +60,15 @@
 
 weather = input("What is the weather like today?").lower().strip()
 
+#
+# if weather == 'rainy and stormy':
+#   print("I want a jacket")
 
-if weather == 'rainy and stormy':
-  print("I want a jacket")
 
-elif weather == 'rainy':
+if 'rainy' in weather and 'stormy' in weather:
+  print("Take a jacket")
+
+elif 'rain' in weather or 'foggy' in weather == 'rainy':
     print("Please take only your umbrella")
 
 elif weather== "foggy":
