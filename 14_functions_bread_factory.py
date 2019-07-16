@@ -6,11 +6,13 @@ def make_dough(ingrediant1, ingrediant2):
     else:
         return 'wrong ingredients. you used ' + ingrediant1 + ' ' + ingrediant2
 
+
 def bake_bread(semi_product):
     if semi_product =='dough':
         return 'bread'
     else:
         return 'wrong ingredients. you used' + ' ' + semi_product
+
 
 
 print(make_dough('wheat', 'water'))
