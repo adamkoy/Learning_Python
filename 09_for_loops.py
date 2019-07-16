@@ -80,3 +80,6 @@ print(result_percent)
 #     print(ind_list)
 #     for num in ind_list:
 #         print(num*2)
+
+
+
