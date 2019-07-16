@@ -18,7 +18,7 @@ print("Sparta's client" + spartan_clients[-6] + "is a very high client of Sparta
 print("Sparta's client" + spartan_clients[5] + "is a very cool client of Sparta")
 print("Sparta's client" + spartan_clients[-9] + "is a very demanding client of Sparta")
 print("Sparta's client" + spartan_clients[9] + "is the main client of Sparta")
-
+print('------------------')
 # The Little Red Riding Hook
 
 Beginning = {
@@ -33,12 +33,12 @@ Middle = {
 }
 
 End = {
-'scene1': "Little red hiding hood got her knife out and cut open from the wolf from the inside out",
-    'Scene2':" She used the wolf's skin to make a winter coat",
-    'scene3':"The End"
+    'scene1': "Little red hiding hood got her knife out and cut open from the wolf from the inside out",
+    'Scene2': " She used the wolf's skin to make a winter coat",
+    'scene3': "The End"
 }
 
-print(beginning['scene1'][scene2][scene3])
+print(beginning[scene1])
 print(middle)['scene1']
 
 #Homework
