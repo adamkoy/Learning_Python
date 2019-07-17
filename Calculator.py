@@ -4,9 +4,9 @@
 def add(x,y):
     return x+y
 
-add1 = str(add(2,4))
-if add1 == '6':
-    print('The add function is working. The total sum is' +' '+add1)
+add1 = (add(2,4))
+if add1 == 6:
+    print('The add function is working. The total sum is', add1)
 
 ###########################################################################################################
 #This is the subtraction function
@@ -54,6 +54,25 @@ print(multipy(43,2))
 print(divide(10,2))
 #######################################################################################################################
 
+choice = input("Enter choice(1/2/3/4):")
+
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+
+if choice == '1':
+   print(num1,"+",num2,"=", add(num1,num2))
+
+elif choice == '2':
+   print(num1,"-",num2,"=", subtraction(num1,num2))
+
+elif choice == '3':
+   print(num1,"*",num2,"=", multipy(num1,num2))
+
+elif choice == '4':
+   print(num1,"/",num2,"=", divide(num1,num2))
+else:
+   print("Invalid input")
+#########################################################################################################################
 # POKEMON CALCULATOR
 import time
 
@@ -66,13 +85,13 @@ def evolve_pikachu(battle_points,evolution_stone):
 evolve1 = input("Do you want to attack Charazard?")
 if evolve1 == 'yes':
 
-    evolve2 = input('What attack do you want to intiate? 1) Electric punch 2) Shock Wave 3) Thunder Slash? Type 1,2,3 for your '
+    attack = input('What attack do you want to intiate? 1) Electric punch 2) Shock Wave 3) Thunder Slash? Type 1,2,3 for your '
           'answer')
 
-if evolve2 == '1':
+if attack == '1':
     print("Pikachu smashed the hell out of charazard. You've earned 200 battle points!")
 else:
-    print("Your attack failed! Better luck next time, You've still earned 199 points!")
+    print("Your attack failed! Better luck next time, You've still earned 100 points!")
 
 Evolve_time=input( "Enter your points earned").strip().lower()
 
@@ -81,4 +100,4 @@ if Evolve_time == '200' :
     time.sleep(2)
     print("Raichu is born!!!!!!!!!!!!!!")
 else:
-    print(evolve_pikachu('199','1'))
+    print(evolve_pikachu('100','1'))
