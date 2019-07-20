@@ -17,6 +17,7 @@ class Calculator:
 
 
 MyCalculator = Calculator()
+
 MyCalculator.num1 = int(input("Please type a number"))
 MyCalculator.num2 = int(input("Please enter second number"))
 MyCalculator.random_function = input("please select an operator").strip().lower()

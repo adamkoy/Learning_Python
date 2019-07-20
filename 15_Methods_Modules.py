@@ -23,7 +23,6 @@ class Dog:
     def speak(self):
         return "bark"
 
-
 # enter variables in my constructor which then passed into the contructor method
 dog1 = Dog("Jimmy", "Bichon Frise", 12, "Dill")
 dog2 = Dog("cindy", "Pitbull", 6)
