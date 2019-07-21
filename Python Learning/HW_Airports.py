@@ -39,8 +39,6 @@ boss.bookingpassenger("Adam Khyo","21/2/2089"," M","GB","234234")
 boss.bookingpassenger("Sarah Reiner","4/2/2039"," F","GB","23449784")
 print(boss.info_passenger)
 
-
-
 #created an aircraft class where I give two attributes. This will be the superclass
 
 
