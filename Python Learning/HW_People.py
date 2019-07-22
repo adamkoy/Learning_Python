@@ -1,29 +1,25 @@
 
 # created my peoples class which contains the variable instances that will be attached when an object is created
 class People():
-     def __init__(self, full_num, dob, gender,nationality):
-         self.fullnam = full_num
+     def __init__(self, first_name,last_name, dob, gender,nationality,id):
+         self.firstname = first_name
+         self.lastname=last_name
          self.dob = dob
          self.gender=gender
          self.nationality=nationality
+         self.id=id
 
 
 #created staff class and info list of passengers
 class Staff(People):
-    def __init__(self,full_name, dob, gender,nationality, staff_id):
-        super().__init__(full_name, dob, gender,nationality )
-        self.full_name = full_name
-        self.staff_id= staff_id
+    def __init__(self,first_name, last_name, dob, gender,nationality,id):
+        super().__init__(first_name, last_name, dob, gender,nationality,id )
+
         self.info_passenger = []
         self.flight_list =[]
 
-#Use the append method to add a passenger's details into the info_passenger_list
-    def bookingpassenger(self,pfull_name,dob, gender,nationality,__passport_num):
-        self.info_passenger.append(pfull_name)
-        self.info_passenger.append(dob)
-        self.info_passenger.append(gender)
-        self.info_passenger.append(nationality)
-        self.info_passenger.append(__passport_num)
+    def booking_passenger (self, passenger):
+        self.info_passenger.append(passenger)
 
 
 #Created a method to add flight details to a flight list
@@ -31,11 +27,27 @@ class Staff(People):
     def add_flights_list(self, flightlist):
         self.flight_list.append(flightlist)
 
+class Passenger(People):
+
+    def __init__(self, first_name, last_name, dob, gender, nationality, id, passport_number):
+        super().__init__(first_name, last_name, dob, gender, nationality, id)
+        self.passportnum = passport_number
+
+    def get_details(self):
+        return self.firstname + "," + self.lastname + "," + self.dob + "," +  self.gender + "," + self.nationality  + "," + self.id
+
+
+
 
 #Assigned staff_01 as the object which gives the full name and id of the staff member
-boss =Staff("Dani pegg", "4/1/1987","M","GB","01")
+Dani =Passenger("Dani ","pegg", "4/1/1987","M","GB","01", "8629386")
+staff1 =Staff("Di ","pg", "4/1/1987","M","GB","01")
 
-#created the variables and inputed the data assigned to a passenger
-boss.bookingpassenger("Adam Khyo","21/2/2089"," M","GB","234234")
-boss.bookingpassenger("Sarah Reiner","4/2/2039"," F","GB","23449784")
-print(boss.info_passenger)
+staff1.booking_passenger(Dani)
+
+print(staff1.info_passenger[0].get_details())
+
+# #created the variables and inputed the data assigned to a passenger
+# boss.bookingpassenger("Adam","Khyo","21/2/2089"," M","GB","234234")
+# print(boss.info_passenger)
+#
