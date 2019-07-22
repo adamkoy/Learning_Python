@@ -9,6 +9,9 @@ class Airplane():
         self.num_passengers = num_passengers
         self.airplane_list = []
 
+    def get_airplane_details(self):
+        return self.brand + ","+ self.airline + ","+ self.num_passengers
+
     def add_airplanes_list( self, airline, num_passengers):
         self.airplane_list.append(airline)
         self.airplane_list.append(num_passengers)
@@ -24,4 +27,5 @@ class Helicopter():
 
 airplane1 = Airplane("RR","EasyJet","300")
 airplane1.add_airplanes_list("Easy Jet","300")
-print(airplane1.airplane_list)
+#print(airplane1.airplane_list)
+print(airplane1.get_airplane_details())
