@@ -40,7 +40,7 @@ class Passenger(People):
 
 
 #Assigned staff_01 as the object which gives the full name and id of the staff member
-Dani =Passenger("Dani ","pegg", "4/1/1987","M","GB","01", "8629386")
+Dani =Passenger("Dani ","pegg", "4/1/1987","T","GB","01", "8629386")
 staff1 =Staff("Di ","pg", "4/1/1987","M","GB","01")
 
 staff1.booking_passenger(Dani)

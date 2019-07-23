@@ -4,7 +4,6 @@ from HW_People import *
 
 import pytest
 
-
 # Test if all instance variables passed are correct for Airplane:
 
 def test_get_airplane_num_passengers():
@@ -20,11 +19,11 @@ def test_get_airplane_company():
     assert (airplane1.brand), "RR"
 
 # # Wrong situation to use this assert function
-# def test_correct_gender():
-#     if Dani.gender != "M " or "F":
-#         raise ValueError('gender has an error')
-#     return True
-#
+def test_correct_gender():
+     if Dani.gender != "M " or "F":
+      raise ValueError('gender has an error')
+     return True
+
 
 def test_passenger_name():
     assert Dani.firstname == "Dani "
