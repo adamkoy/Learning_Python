@@ -8,7 +8,7 @@
 
 
 try:
-    file = open(".Order.txt", "a")  # use open function to open binary file - a flag and w (overides) flag
+    file = open(".Order.txt2", "a")  # use open function to open binary file - a flag and w (overides) flag
 
 except FileExistsError as erromsg:
     print(" Something wrong occured" ,erromsg)
@@ -66,6 +66,7 @@ class My_file_hacker ():
         try:
             result = open(file, value )
             list_lines = result.write(text)
+
             result.close()
         except ValueError as msg:
             print("something occured", msg)
@@ -89,5 +90,5 @@ class My_file_hacker ():
 
 hacker1 = My_file_hacker ("my_file1.txt1", "w", "You've been hacked")
 
-#hacker1.file_writer("my_file1.txt1", "w", "you've been smacked")
-#hacker1.file_reader("my_file1.txt1", "r")
+hacker1.file_writer("my_file1.txt1", "w", "you've been smacked")
+hacker1.file_reader("my_file1.txt1", "r")
