@@ -4,7 +4,7 @@
 #Has a name
 # Stores things inside
 
-my_variable = '( Hello there'
+my_variable = ('Hello there')
 
 # Variable with a string being printed to console
 print (my_variable)
